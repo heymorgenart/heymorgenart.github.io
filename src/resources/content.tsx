@@ -23,24 +23,24 @@ const social: Social = [
   // Import new icons in /once-ui/icons.ts
   // Set essentials: true for links you want to show on the about page
   {
-     name: 'Behance',
-        icon: 'behance',
-        link: 'https://www.behance.net/daria_morgen',
-    },
-    {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/daria-morgen-b7a36aba/',
-    },
-    {
-        name: 'Email',
-        icon: 'email',
-        link: 'mailto:heymorgen.art@gmail.com',
-    },
-      {
-        name: 'Download CV',
-        icon: 'Download',
-        link: 'mailto:heymorgen.art@gmail.com',
+    name: "Behance",
+    icon: "behance",
+    link: "https://www.behance.net/daria_morgen",
+  },
+  {
+    name: "LinkedIn",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/daria-morgen-b7a36aba/",
+  },
+  {
+    name: "Email",
+    icon: "email",
+    link: "mailto:heymorgen.art@gmail.com",
+  },
+  {
+    name: "Download CV",
+    icon: "Download",
+    link: "mailto:heymorgen.art@gmail.com",
   },
 ];
 
@@ -66,8 +66,12 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm Selene, a design engineer at{" "}
+      <Text as="span" size="xl" weight="strong">
+        ONCE UI
+      </Text>
+      , where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    </>
   ),
 };
 
@@ -91,17 +95,32 @@ const about: About = {
     display: true,
     title: "Introduction",
     description: (
-    <>I am a UI/UX designer in the Video Game industry. I have a strong design, painting, and visual graphics background. I studied biology and it always fascinated me how the human brain interacts with art & computer technologies. I love team work and multicultural team experiences. <p>My skills in UI, UX and digital art makes me a great team player. I am passionate about storytelling and love to create original visual universes for people to dive in. When I am not sketching, I am working on humanitarian projects and volunteering. </p>
-    <p>I am eligible to work everywhere within the European Union + Ukraine</p>
-    <h2>Internet kid</h2>
-    <p>At 5 years old, I taught myself how to create custom maps inside Map Editor so I could build worlds for my favourite video game: HoMM 3. Ever since then, I've been chasing the sense of delight I felt during my earliest experiences with video games.
-    </p>
-    <p></p>
-    <h2>Tools</h2>
-    <p>Being comfortable with whatever platform the work calls for, old or new, is part of the craft. For years, the tools have changed completely, more than once. 
-    That said, the current lineup includes Figma, Adobe CC, Unity, Miro, Jira, Blender, Git, Procreate, Affinity, Cinema 4D, AI systems.
-    </p>
-    </>
+      <>
+        I am a UI/UX designer in the Video Game industry. I have a strong design, painting, and
+        visual graphics background. I studied biology and it always fascinated me how the human
+        brain interacts with art & computer technologies. I love team work and multicultural team
+        experiences.{" "}
+        <p>
+          My skills in UI, UX and digital art makes me a great team player. I am passionate about
+          storytelling and love to create original visual universes for people to dive in. When I am
+          not sketching, I am working on humanitarian projects and volunteering.{" "}
+        </p>
+        <p>I am eligible to work everywhere within the European Union + Ukraine</p>
+        <h2>Internet kid</h2>
+        <p>
+          At 5 years old, I taught myself how to create custom maps inside Map Editor so I could
+          build worlds for my favourite video game: HoMM 3. Ever since then, I've been chasing the
+          sense of delight I felt during my earliest experiences with video games.
+        </p>
+        <p></p>
+        <h2>Tools</h2>
+        <p>
+          Being comfortable with whatever platform the work calls for, old or new, is part of the
+          craft. For years, the tools have changed completely, more than once. That said, the
+          current lineup includes Figma, Adobe CC, Unity, Miro, Jira, Blender, Git, Procreate,
+          Affinity, Cinema 4D, AI systems.
+        </p>
+      </>
     ),
   },
   work: {
@@ -113,9 +132,12 @@ const about: About = {
         timeframe: "2023 - Present",
         role: "UI Designer",
         achievements: [
-        <>Supported decision-making through analysis of player feedback.</>,
-        <>Maintained the consistency and delivered a variety of assets for live-ops features. </>,
-        <>Prepared and implemented scenes in Unity, handling layout setup, transitions, and animations </>
+          <>Supported decision-making through analysis of player feedback.</>,
+          <>Maintained the consistency and delivered a variety of assets for live-ops features. </>,
+          <>
+            Prepared and implemented scenes in Unity, handling layout setup, transitions, and
+            animations{" "}
+          </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -132,52 +154,48 @@ const about: About = {
         timeframe: "2022 - 2023",
         role: "UI/UX Designer",
         achievements: [
-          <>
-            Influence on overall UI art styles and creative direction through my work.
-</>,
-          <>
-            Creating UI artwork within defined look & feel
-          </>,
+          <>Influence on overall UI art styles and creative direction through my work.</>,
+          <>Creating UI artwork within defined look & feel</>,
           <>Maintaining Libraries for future development</>,
-          <>Breaking down features into defined structures, components, and processes that meet the technical, aesthetic, and functional requirements of the game vision</>
-
+          <>
+            Breaking down features into defined structures, components, and processes that meet the
+            technical, aesthetic, and functional requirements of the game vision
+          </>,
         ],
         images: [],
       },
       {
-company: "Ilyon",
+        company: "Ilyon",
         timeframe: "2019 - 2022",
         role: "UI Designer",
         achievements: [
+          <>Influence on overall UI art styles and creative direction through my work.</>,
+          <>Preparing mock-ups and libraries for devs, exporting technically optimized asset</>,
           <>
-            Influence on overall UI art styles and creative direction through my work.
-</>,
-          <>
-            Preparing mock-ups and libraries for devs, exporting technically optimized asset
+            Visualising guidelines for interface animations that support the player during the
+            playthrough
           </>,
-          <>Visualising guidelines for interface animations that support the player during the 
-playthrough</>,
-          <>Breaking down features into defined structures, components, and processes that meet the technical, aesthetic, and functional requirements of the game's vision</>
-
-],
-},
+          <>
+            Breaking down features into defined structures, components, and processes that meet the
+            technical, aesthetic, and functional requirements of the game's vision
+          </>,
+        ],
+      },
       {
         company: "Wow-How Studio",
         timeframe: "2016 - 2022",
         role: "UI/UX Designer",
         achievements: [
+          <>Creating illustrations, storyboards for 2D/3D animated scenes</>,
+          <>Designing and drawing icons and UI elements for mobile/PC games</>,
           <>
-            Creating illustrations, storyboards for 2D/3D animated scenes
-</>,
-          <>
-            Designing and drawing icons and UI elements for mobile/PC games
+            Branding and graphic design for different clients' projects, with guidance from the
+            first sketch to the print stage
           </>,
-          <>Branding and graphic design for different clients' projects, with guidance from the first 
-sketch to the print stage</>,
         ],
         images: [],
       },
-],
+    ],
   },
   studies: {
     display: true, // set to false to hide this section
@@ -185,9 +203,12 @@ sketch to the print stage</>,
     institutions: [
       {
         name: "UMCS",
-        description: <>Master of Arts, MA Graphic Arts
-        I've been granted the Full Tuition Waiver Scholarship at Maria Curie Skłodowska University for artistic skills and social activities.</>,
-        
+        description: (
+          <>
+            Master of Arts, MA Graphic Arts I've been granted the Full Tuition Waiver Scholarship at
+            Maria Curie Skłodowska University for artistic skills and social activities.
+          </>
+        ),
       },
       {
         name: "H.S. Skovoroda KNPU",
@@ -201,9 +222,7 @@ sketch to the print stage</>,
     skills: [
       {
         title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
+        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
         tags: [
           {
             name: "Figma",
@@ -228,9 +247,7 @@ sketch to the print stage</>,
       },
       {
         title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
+        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
         tags: [
           {
             name: "JavaScript",

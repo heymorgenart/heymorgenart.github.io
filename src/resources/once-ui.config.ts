@@ -198,7 +198,7 @@ const sameAs: SameAsConfig = {
   threads: "https://www.threads.com/@once_ui",
   linkedin: "https://www.linkedin.com/company/once-ui/",
   discord: "https://discord.com/invite/5EyAQ4eNdS",
-  behance: "https://www.behance.net/daria_morgen"
+  behance: "https://www.behance.net/daria_morgen",
 };
 
 // social sharing configuration for blog posts
