@@ -177,6 +177,8 @@ export interface About extends BasePageConfig {
       name: string;
       /** Description of studies */
       description: React.ReactNode;
+      /** Optional secondary line (e.g. scholarship), rendered indented below the description */
+      addon?: React.ReactNode;
     }>;
   };
   /** Technical skills section */

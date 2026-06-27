@@ -1,4 +1,4 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -141,12 +141,6 @@ const about: About = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
@@ -203,10 +197,11 @@ const about: About = {
     institutions: [
       {
         name: "UMCS",
-        description: (
+        description: <>Master of Arts, MA Graphic Arts</>,
+        addon: (
           <>
-            Master of Arts, MA Graphic Arts I've been granted the Full Tuition Waiver Scholarship at
-            Maria Curie Skłodowska University for artistic skills and social activities.
+            I've been granted the Full Tuition Waiver Scholarship at Maria Curie Skłodowska
+            University for artistic skills and social activities.
           </>
         ),
       },

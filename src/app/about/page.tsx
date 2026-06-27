@@ -275,6 +275,16 @@ export default function About() {
                     <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
                     </Text>
+                    {institution.addon && (
+                      <Text
+                        variant="body-default-s"
+                        onBackground="neutral-weak"
+                        paddingLeft="24"
+                        marginTop="4"
+                      >
+                        {institution.addon}
+                      </Text>
+                    )}
                   </Column>
                 ))}
               </Column>
