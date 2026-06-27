@@ -7,16 +7,15 @@ const withMDX = mdx({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Static HTML export for GitHub Pages (no Node server at runtime).
+  output: "export",
+  // Pages serves directory-style URLs (/about/ -> /about/index.html).
+  trailingSlash: true,
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "www.google.com",
-        pathname: "**",
-      },
-    ],
+    // The default image optimizer needs a server; disable it for static export.
+    unoptimized: true,
   },
   sassOptions: {
     compiler: "modern",
