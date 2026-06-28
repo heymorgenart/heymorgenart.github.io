@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 
 import {
   HiArrowUpRight,
@@ -37,6 +37,8 @@ import {
   FaWhatsapp,
   FaReddit,
   FaTelegram,
+  FaSquareBehance,
+  FaDownload,
 } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
@@ -72,6 +74,8 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  behance: FaSquareBehance,
+  download: FaDownload,
 };
 
 export type IconLibrary = typeof iconLibrary;

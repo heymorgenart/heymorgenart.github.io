@@ -5,6 +5,7 @@
     "dev": "next dev",
     "export": "next export",
     "build": "next build",
+    "postbuild": "node scripts/postbuild-redirect.mjs",
     "biome-write": "npx @biomejs/biome format --write .",
     "start": "next start",
     "lint": "next lint"

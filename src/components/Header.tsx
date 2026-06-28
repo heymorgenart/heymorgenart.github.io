@@ -43,7 +43,13 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" })
 export default TimeDisplay;
 
 export const Header = () => {
-  const pathname = usePathname() ?? "";
+  const rawPathname = usePathname() ?? "";
+  // Normalize any trailing slash so exact-match checks like `=== "/about"`
+  // stay robust regardless of how the URL was requested.
+  const pathname =
+    rawPathname !== "/" && rawPathname.endsWith("/")
+      ? rawPathname.slice(0, -1)
+      : rawPathname;
 
   return (
     <>
@@ -86,10 +92,6 @@ export const Header = () => {
             zIndex={1}
           >
             <Row gap="4" vertical="center" textVariant="body-default-s" suppressHydrationWarning>
-              {routes["/"] && (
-                <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
-              )}
-              <Line background="neutral-alpha-medium" vert maxHeight="24" />
               {routes["/about"] && (
                 <>
                   <Row s={{ hide: true }}>

@@ -9,8 +9,8 @@ const withMDX = mdx({
 const nextConfig = {
   // Static HTML export for GitHub Pages (no Node server at runtime).
   output: "export",
-  // Pages serves directory-style URLs (/about/ -> /about/index.html).
-  trailingSlash: true,
+  // Clean URLs: exports about.html (served at /about), not about/index.html.
+  trailingSlash: false,
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
   images: {

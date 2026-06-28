@@ -39,7 +39,7 @@ const social: Social = [
   },
   {
     name: "Download CV",
-    icon: "Download",
+    icon: "download",
     link: "mailto:heymorgen.art@gmail.com",
   },
 ];
