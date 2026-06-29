@@ -40,7 +40,8 @@ const social: Social = [
   {
     name: "Download CV",
     icon: "download",
-    link: "mailto:heymorgen.art@gmail.com",
+    link: "/daria-morgen-cv.pdf",
+    download: "Daria Morgen CV.pdf",
   },
 ];
 

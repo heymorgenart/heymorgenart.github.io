@@ -59,6 +59,8 @@ export type Social = Array<{
    * The link is not validated by code, make sure it's correct
    */
   link: string;
+  /** Whether to trigger a file download instead of navigation */
+  download?: string | boolean;
   /** Whether this social link is essential and should be displayed on the about page */
   essential?: boolean;
 }>;
